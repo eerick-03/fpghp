@@ -1,1 +1,139 @@
-This is my website to test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick's File</title>
+</head>
+
+<style>
+   
+body{background-image: url("lake.jpg/dragon.png"), url("lake.jpg/lake.jpg");
+background-position: right top, left top;
+background-repeat: no-repeat, repeat;
+}
+
+h1{color:white; text-align: Center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+h2{color: whitesmoke; text-align: center; font-family: serif;}
+h3{color: whitesmoke; text-align: center;}
+h4{color:aliceblue; text-align: center;}
+p{ color: white;}
+input{align-content: center;}
+
+.fixed-button1{
+    background-color: darkgoldenrod;
+    border: 1px solid #555555;;
+    color: white;
+    padding: 15px, 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.fixed-button2{
+    background-color: darkgoldenrod;
+    border: 1px solid #555555;;
+    color: white;
+    padding: 15px, 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.fixed-button3{
+    background-color: darkgoldenrod;
+    border: 1px solid #555555;;
+    color: white;
+    padding: 15px, 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.fixed-button4{
+    background-color: darkgoldenrod;
+    border: 1px solid #555555;
+    color: white;
+    padding: 15px, 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+
+</style>
+
+<body>
+
+<h1>Welcome to my Website!</h1>
+<h2> Please have fun! =)</h2>
+<h3> Don't forget to Like, Share and Subscribe</h3>
+<h4> NOTE: THIS IS ONLY A TEST, NO COPYRIGHT INTENDED</h4>
+
+<div style="display: flex; justify-content: center; align-items: center ;">
+    <p>Edad nimo pang gulang or pang bata?</p>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center;"">
+
+ <input type="number" style="width: 80px;" id="ageInput" placeholder="Enter Age" min="1" max="100">
+
+ </div>
+
+ <div style="display: flex; justify-content: center; align-items: center ;">
+<button4 class="fixed-button4" type="fixed-button4" onclick="classifyAge()"> Identify </button4>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center ;">
+<p id="result"></p>
+</div>
+
+<script>
+function classifyAge() {
+    const age = parseInt(document.getElementById("ageInput").value);
+    let cat = age < 0 ? "Invalid" : age <= 2 ? "Okay Bata Pa":
+     age <= 12 ? "Bata pa gihapon":
+     age <= 19 ? "GengGeng":
+     age <= 40 ? "Hapit na ma Gors" :
+     age <= 60 ? "Gors naka Hahaha": "Ahay kaluoy";
+    document.getElementById("result").innerText = `Category: ${cat}`;
+}
+</script>
+
+<div style="display: flex; justify-content: center; align-items: center ;">
+<button1 class= "fixed-button1" type="fixed-button1" onclick="alert('Thank You for subscribing')">Subscribe</button1>
+<button2  class= "fixed-button2" type="fixed-button2" onclick="alert('Thank You for Liking')"> Like </button2>
+<button3  class= "fixed-button3" type="fixed-button3" onclick="alert('Thank You for Sharing')"> Share </button3>
+</div>
+
+
+<div> 
+    <button id="refresh-btn">Refresh Page</button>
+<script>
+const refreshBtn = document.getElementById('refresh-btn');
+
+refreshBtn.addEventListener('click', () => {
+    window.location.reload();
+});
+</script>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
